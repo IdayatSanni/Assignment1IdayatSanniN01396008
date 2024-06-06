@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace Assignment1IdayatSanniN01396008.Controllers
 {
-    public class AddTen : ApiController
+    public class HostingCostController : ApiController
     {
 
     }

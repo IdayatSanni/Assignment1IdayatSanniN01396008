@@ -9,5 +9,10 @@ namespace Assignment1IdayatSanniN01396008.Controllers
 {
     public class SquareController : ApiController
     {
+        public int Get(int id)
+        {
+            int result = id * id;
+            return result;
+        }
     }
 }
