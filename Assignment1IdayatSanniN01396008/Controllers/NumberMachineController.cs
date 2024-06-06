@@ -12,19 +12,32 @@ namespace Assignment1IdayatSanniN01396008.Controllers
         [HttpGet]
         [Route("api/NumberMachine/{id}")]
 
-        public int Method(int id) 
+        /// <summary>
+        /// This method receives a number and returns the result of applying applies four mathematical operations to it
+        /// </summary>
+        /// <param name="id">the number to enter</param>
+        /// <returns>id + 10, id /2, id -5, id * 10</returns>
+        /// <example>
+        /// GET: localhost:xx/api/AddTen/10 -> {"sum":20,"divide":5,"subtract":5,"multiply":100}
+        /// GET: localhost:xx/api/AddTen/-5 -> {"sum":5,"divide":-2,"subtract":-10,"multiply":-50}
+        /// GET: localhost:xx/api/AddTen/30 -> {"sum":40,"divide":15,"subtract":25,"multiply":300}
+        /// </example>
+        public IHttpActionResult Method(int id) 
         {
             int sum = id + 10;
-            int divide = id / 10;
-            int multiply = id % 10;
+            int divide = id / 2;
+            int subtract = id - 5;
+            int multiply = id * 10;
 
             var result = new
             {
-                add = sum,
-                divisonMami = divide,
-                multiplication = multiply
+                sum,
+                divide,
+                subtract,
+                multiply
             };
-            return ok(result);
+
+            return Ok(result);
 
         }
 
