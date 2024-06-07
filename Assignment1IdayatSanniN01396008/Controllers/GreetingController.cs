@@ -31,10 +31,10 @@ namespace Assignment1IdayatSanniN01396008.Controllers
         /// <param name="id">the number to enter</param>
         /// <returns>"Greetings to {id} people!"</returns>
         /// <example>
-        /// GET: localhost:xx/api/Greetings/{id} -> "Greetings to {id} people!"
-        /// GET: localhost:xx/api/Greetings/3 -> "Greetings to 3 people!"
-        /// GET: localhost:xx/api/Greetings/6 -> "Greetings to 6 people!"
-        /// GET: localhost:xx/api/Greetings/0 -> "Greetings to 0 people!"
+        /// GET: localhost:xx/api/Greeting/{id} -> "Greetings to {id} people!"
+        /// GET: localhost:xx/api/Greeting/3 -> "Greetings to 3 people!"
+        /// GET: localhost:xx/api/Greeting/6 -> "Greetings to 6 people!"
+        /// GET: localhost:xx/api/Greeting/0 -> "Greetings to 0 people!"
         /// </example>
         public string Get(int id)
         {
